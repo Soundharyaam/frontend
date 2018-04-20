@@ -29,5 +29,8 @@ var formattedRole = HTMLheaderRole.replace("%data%", role);
 //console.log(formattedName);
 //console.log(formattedRole);
 
-$("#main").append(formattedName);
-$("#main").append(formattedRole);
+//$("#main").append(formattedName);
+//$("#main").append(formattedRole);
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
