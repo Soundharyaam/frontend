@@ -10,3 +10,10 @@ console.log(firstName);
 
 var awesomeThoughts = "I am " + firstName + " and I am AWESOME!";
 console.log(awesomeThoughts);
+
+var email = "contact@soundharyaam.com";
+
+var newEmail = email.replace("contact", "soundharya");
+
+console.log(email);
+console.log(newEmail);
