@@ -34,3 +34,22 @@ var formattedRole = HTMLheaderRole.replace("%data%", role);
 
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
+
+var bio = {
+    "name": "Soundharya",
+    "role": "Software devloper",
+    "contactInfo": {
+        "email": "contact@soundharyaam.com",
+        "github": "soundharyaam",
+        "twitter": "soundharyaam",
+        "instagram": "soundharyaam"
+    },
+    "pictureURL": "http://brightdrops.com/wp-content/uploads/2016/12/buddha-the-mind-is-1.jpg",
+    "welcomeMessage": "Hi there! This is Soundharya. Welcome to my website.",
+    "skills": ["software development", "researching", "photography", "writing"]
+}
+
+$("#main").append(bio.contactInfo);
+$("#main").append(bio.pictureURL);
+$("#main").append(bio.welcomeMessage);
+$("#main").append(bio.skills);
