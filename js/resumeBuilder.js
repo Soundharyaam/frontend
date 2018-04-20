@@ -8,12 +8,14 @@ var age = 24;
 
 console.log(firstName);
 
-var awesomeThoughts = "I am " + firstName + " and I am AWESOME!";
-console.log(awesomeThoughts);
-
 var email = "contact@soundharyaam.com";
-
 var newEmail = email.replace("contact", "soundharya");
 
 console.log(email);
 console.log(newEmail);
+
+var awesomeThoughts = "I am " + firstName + " and I am AWESOME!";
+console.log(awesomeThoughts);
+funThoughts = awesomeThoughts.replace("AWESOME", "FUN");
+console.log(funThoughts);
+$("#main").append(funThoughts);
