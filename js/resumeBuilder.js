@@ -53,3 +53,21 @@ $("#main").append(bio.contactInfo);
 $("#main").append(bio.pictureURL);
 $("#main").append(bio.welcomeMessage);
 $("#main").append(bio.skills);
+
+var work = {
+    "position": "Senior front-end engineer",
+    "employer": "Astutix",
+    "yearsWorked": "3 years"
+}
+
+work.city = "Bangalore";
+
+var education = {
+    "schoolName": "Anna University",
+    "years": "4 years"
+}
+
+education["schoolCity"] = "Coimbatore";
+
+$("#main").append(work["position"]);
+$("#main").append(education.schoolName);
