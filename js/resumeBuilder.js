@@ -79,8 +79,7 @@ var education = {
             "degree": "BE",
             "major": ["Electronics", "Telecommunications"],
             "minor": ["Computer Programming", "Robotics"],
-            "years": "2011-2015",
-            "onlineCourse": "Introduction to Robotics and it's simulation"
+            "years": "2011-2015"
         },
         {
             "name": "Harvard",
@@ -88,8 +87,95 @@ var education = {
             "degree": "MBA",
             "major": ["International Business, Entrepreneurship"],
             "minor": ["Finance", "Trading"],
-            "years": "2020-2022",
-            "onlineCourse": "Introduction to entrepreneurship and business management skills"
+            "years": "2020-2022"
+        }
+    ],
+    "onlineCourse": [{
+            "title": "Python for Everybody",
+            "school": "University of Michigan",
+            "provider": "Coursera"
+        },
+        {
+            "title": "Introduction to entrepreneurship and business management skills",
+            "school": "Harvard",
+            "provider": "Harvard Business Review"
         }
     ]
 }
+
+$("#main").append(education.onlineCourse[0].title);
+
+/*var work = {
+    "officeWorks": [{
+            "task": "front-end work"
+        },
+        {
+            "task": "back-end integration with AWS"
+        },
+        {
+            "task": "App design"
+        }
+    ],
+    "openSourceProjects": [{
+            "org": "Mozilla"
+        },
+        {
+            "org": "OpenGenus"
+        },
+        {
+            "org": "fossasia"
+        }
+    ]
+};*/
+
+/*var projects = {
+    "variousProjects": [{
+            "name": "studentinno"
+        },
+        {
+            "name": "Soundharyaam.com"
+        }
+    ]
+};*/
+
+var work = {
+    "jobs": [{
+            "employer": "abc",
+            "title": "engineer",
+            "location": "London",
+            "dates": "Oct 2015- sept 2016",
+            "description": "responsible for AI and ML processes"
+        },
+        {
+            "employer": "def",
+            "title": "senior engineer",
+            "location": "Zagreb",
+            "dates": "Jan 2017- present",
+            "description": "responsible for DevOps"
+        }
+    ]
+}
+
+
+var projects = {
+    "projects": [{
+            "title": "studentinno",
+            "dates": "Oct 2015- sept 2016",
+            "description": "responsible for AI and ML processes",
+            "images": "https://martechtoday.com/wp-content/uploads/2018/02/robot-calculations-analytics-ai-ss-1920-800x450.jpg"
+        },
+        {
+            "title": "Soundharyaam.com",
+            "dates": "Jan 2017- present",
+            "description": "responsible for DevOps",
+            "images": "https://martechtoday.com/wp-content/uploads/2018/02/robot-calculations-analytics-ai-ss-1920-800x450.jpg"
+        }
+    ]
+}
+
+/*$("#main").append(projects.variousProjects[1].name);
+$("#main").append(work.officeWorks[1].task);
+$("#main").append(work.openSourceProjects[0].org);*/
+
+$("#main").append(work.jobs[0].title);
+$("#main").append(projects.projects[1].title);
