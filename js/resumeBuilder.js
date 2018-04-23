@@ -62,7 +62,7 @@ var work = {
 
 work.city = "Bangalore";
 
-var education = {
+/*var education = {
     "schoolName": "Anna University",
     "years": "4 years"
 }
@@ -70,4 +70,26 @@ var education = {
 education["schoolCity"] = "Coimbatore";
 
 $("#main").append(work["position"]);
-$("#main").append(education.schoolName);
+$("#main").append(education.schoolName);*/
+
+var education = {
+    "school": [{
+            "name": "Anna University",
+            "city": "Coimbatore",
+            "degree": "BE",
+            "major": ["Electronics", "Telecommunications"],
+            "minor": ["Computer Programming", "Robotics"],
+            "years": "2011-2015",
+            "onlineCourse": "Introduction to Robotics and it's simulation"
+        },
+        {
+            "name": "Harvard",
+            "city": "Boston, MA",
+            "degree": "MBA",
+            "major": ["International Business, Entrepreneurship"],
+            "minor": ["Finance", "Trading"],
+            "years": "2020-2022",
+            "onlineCourse": "Introduction to entrepreneurship and business management skills"
+        }
+    ]
+}
