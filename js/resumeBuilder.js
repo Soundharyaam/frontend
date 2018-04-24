@@ -3,7 +3,7 @@ This is empty on purpose! Your code to build the resume will go here.
  */
 
 //$("#main").append("Soundharya");
-var firstName = "Soundharya";
+/*var firstName = "Soundharya";
 var age = 24;
 
 console.log(firstName);
@@ -18,7 +18,7 @@ var awesomeThoughts = "I am " + firstName + " and I am AWESOME!";
 console.log(awesomeThoughts);
 funThoughts = awesomeThoughts.replace("AWESOME", "FUN");
 console.log(funThoughts);
-//$("#main").append(funThoughts);
+//$("#main").append(funThoughts);*/
 
 var name = "Soundharya AM";
 var role = "Software Developer";
@@ -37,7 +37,7 @@ $("#header").prepend(formattedName);
 
 var bio = {
     "name": "Soundharya",
-    "role": "Software devloper",
+    "role": "Software developer",
     "contactInfo": {
         "email": "contact@soundharyaam.com",
         "github": "soundharyaam",
@@ -144,14 +144,14 @@ var work = {
             "title": "engineer",
             "location": "London",
             "dates": "Oct 2015- sept 2016",
-            "description": "responsible for AI and ML processes"
+            "description": "Responsible for AI and ML processes"
         },
         {
             "employer": "def",
             "title": "senior engineer",
             "location": "Zagreb",
             "dates": "Jan 2017- present",
-            "description": "responsible for DevOps"
+            "description": "Responsible for DevOps"
         }
     ]
 }
@@ -161,13 +161,13 @@ var projects = {
     "projects": [{
             "title": "studentinno",
             "dates": "Oct 2015- sept 2016",
-            "description": "responsible for AI and ML processes",
+            "description": "Responsible for AI and ML processes",
             "images": "https://martechtoday.com/wp-content/uploads/2018/02/robot-calculations-analytics-ai-ss-1920-800x450.jpg"
         },
         {
             "title": "Soundharyaam.com",
             "dates": "Jan 2017- present",
-            "description": "responsible for DevOps",
+            "description": "Responsible for DevOps",
             "images": "https://martechtoday.com/wp-content/uploads/2018/02/robot-calculations-analytics-ai-ss-1920-800x450.jpg"
         }
     ]
@@ -179,3 +179,35 @@ $("#main").append(work.openSourceProjects[0].org);*/
 
 $("#main").append(work.jobs[0].title);
 $("#main").append(projects.projects[1].title);
+
+if (bio.skills.length > 0) {
+    $("#header").append(HTMLskillsStart);
+    for (var i = 0; i < 4; i++) {
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
+        $("#skills").append(formattedSkill);
+    }
+}
+
+/*var cameron = {};
+cameron.job = "course dev";
+
+var makeCourse = function() {
+    console.log("Made a course");
+}
+
+var courses = 0;
+while (cameron.job === "course dev") {
+    makeCourse();
+    courses = courses + 1;
+    if (courses === 10) {
+        cameron.job = "learning specialist";
+    }
+}
+
+console.log(cameron.job);*/
+
+
+
+/*for (var i = 0; i < 3; i++) {
+
+}*/
