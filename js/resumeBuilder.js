@@ -206,22 +206,35 @@ while (cameron.job === "course dev") {
 
 console.log(cameron.job);*/
 
+function displayWork() {
 
+    if (work.jobs.length > 0) {
 
-if (work.jobs.length > 0) {
+        $("#workExperience").append(HTMLworkStart);
 
-    $("#workExperience").append(HTMLworkStart);
-
-    for (var i = 0; i < 4; i++) {
-        var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
-        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
-        var formattedEmployerTitle = formattedEmployer + formattedTitle;
-        $(".work-entry:last").append(formattedEmployerTitle);
-        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
-        $(".work-entry:last").append(formattedDates);
-        var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
-        $(".work-entry:last").append(formattedLocation);
-        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
-        $(".work-entry:last").append(formattedDescription);
+        for (var i = 0; i < 4; i++) {
+            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
+            var formattedEmployerTitle = formattedEmployer + formattedTitle;
+            $(".work-entry:last").append(formattedEmployerTitle);
+            var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
+            $(".work-entry:last").append(formattedDates);
+            var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
+            $(".work-entry:last").append(formattedLocation);
+            var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
+            $(".work-entry:last").append(formattedDescription);
+        }
     }
+
 }
+
+displayWork();
+
+//collecting click locations
+
+$(document).click(function(loc) {
+    var x = loc.pageX;
+    var y = loc.pageY;
+
+    logClicks(x, y);
+});
